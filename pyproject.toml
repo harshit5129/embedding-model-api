@@ -1,42 +1,18 @@
 [project]
 name = "embedding-model-api"
-version = "1.0.0"
-description = "FastAPI-based embedding API with CLIP text/image embeddings"
-readme = "README.md"
-requires-python = ">=3.12"
-license = { text = "MIT" }
-authors = [
-    { name = "Harshit", email = "harshit@example.com" }
-]
-keywords = ["embedding", "fastapi", "clip", "vector", "api"]
-classifiers = [
-    "Development Status :: 4 - Beta",
-    "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python :: 3.12",
-    "Framework :: FastAPI",
-]
-
+version = "0.1.0"
+description = "Embedding Model API using FastEmbed"
+requires-python = ">=3.10"
 dependencies = [
-    "fastapi>=0.100.0",
-    "uvicorn>=0.23.0",
-    "fastembed>=0.4.0",
-    "pillow>=10.0.0",
-    "numpy>=1.24.0",
-    "pydantic>=2.0.0",
-    "python-multipart>=0.0.6",
-]
-
-[project.optional-dependencies]
-dev = [
-    "black",
-    "ruff",
-    "pytest",
+    "fastapi",
+    "uvicorn",
+    "fastembed",
+    "pillow",
+    "numpy",
+    "pydantic",
+    "python-multipart",
 ]
 
 [build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
-
-[tool.uv]
-dev-dependencies = []
+requires = ["hatchling"]
+build-backend = "hatchling.build"
