@@ -1,7 +1,0 @@
-fastapi
-uvicorn
-fastembed
-pillow
-numpy
-pydantic
-python-multipart
