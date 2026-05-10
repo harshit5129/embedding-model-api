@@ -65,5 +65,5 @@ def is_models_loaded() -> bool:
 
 def get_embedding_dimension() -> int:
     if text_model is not None:
-        return text_model.dim
+        return text_model.embedding_size
     return 512
