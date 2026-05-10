@@ -5,7 +5,7 @@ from fastembed import ImageEmbedding, TextEmbedding
 
 from app.core.config import settings
 from app.core.exceptions import ModelLoadError, ModelNotLoadedError
-from config import logger
+from app.core.logging import logger
 
 executor: Optional[ThreadPoolExecutor] = None
 image_model: Optional[ImageEmbedding] = None

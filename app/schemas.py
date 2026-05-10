@@ -51,3 +51,19 @@ class MetricsResponse(BaseModel):
     image_model: str
     embedding_dimension: int
     max_workers: int
+
+
+class TTSRequest(BaseModel):
+    text: Annotated[str, Field(min_length=1, max_length=5000)]
+    voice: str = "alba"
+    language: str = "english"
+
+
+class TTSVoiceInfo(BaseModel):
+    name: str
+    language: str
+
+
+class TTSVoicesResponse(BaseModel):
+    voices: list[TTSVoiceInfo]
+    sample_rate: int

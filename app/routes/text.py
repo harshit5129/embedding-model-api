@@ -7,7 +7,7 @@ from app.schemas import (
 )
 from app.core.models import embed_texts_sync, is_models_loaded, get_executor
 from app.core.exceptions import ModelNotLoadedError, EmbeddingError
-from config import logger
+from app.core.logging import logger
 import asyncio
 
 router = APIRouter(prefix="/embed", tags=["embeddings"])

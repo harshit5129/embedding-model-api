@@ -2,7 +2,7 @@ from fastapi import APIRouter, File, HTTPException, UploadFile
 from app.schemas import ImageResponse
 from app.core.models import embed_images_sync, is_models_loaded, get_executor
 from app.core.exceptions import ModelNotLoadedError, ImageProcessingError, EmbeddingError
-from config import logger
+from app.core.logging import logger
 import asyncio
 import io
 from PIL import Image

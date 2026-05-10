@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException
 import numpy as np
 from app.schemas import SimilarityRequest, SimilarityResponse
 from app.core.exceptions import ValidationError
-from config import logger
+from app.core.logging import logger
 
 router = APIRouter(prefix="", tags=["similarity"])
 
